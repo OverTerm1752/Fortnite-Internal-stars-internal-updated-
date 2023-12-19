@@ -1,4 +1,4 @@
-#pragma once
+#pragma once//s
 bool __forceinline Main()
 {
 	AllocConsole();
