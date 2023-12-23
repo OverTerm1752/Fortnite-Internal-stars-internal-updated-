@@ -361,7 +361,7 @@ public:
 	UGameViewportClient* ViewPortClient()
 	{
 
-		return (UGameViewportClient*)(*(uintptr_t*)(this + 0x71));
+		return (UGameViewportClient*)(*(uintptr_t*)(this + 0x78));
 
 	}
 
