@@ -47,7 +47,7 @@ uintptr_t UObject::FindObject(const std::string& name)
 {
 	static FUObjectArray* GObjects = NULL;
 	if (!GObjects)
-    GObjects = (FUObjectArray*)ResolveRelativeAddress(PScan(("48 89 05 ? ? ? ? 44 38 3D ? ? ? ?")), 7);
+    GObjects = (FUObjectArray*)ResolveRelativeAddress(PScan(("48 8B 05 ? ? ? ? 48 8B 0C C8 48 8B 04 D1 48 85 C0 0F 84 ? ? ? ? 49 3B C1 0F 85 ? ? ? ? B0 01")), 7);
 	auto GlobalObjects = GObjects->ObjObjects;
 
 	for (int i = 0; i < GlobalObjects.Num(); ++i)
