@@ -177,14 +177,14 @@ public:
 	ARootComponent* RootComponent()
 	{
 
-		return (ARootComponent*)*(uint64_t*)(this + 0x190);
+		return (ARootComponent*)*(uint64_t*)(this + 0x198);
 
 	}
 
 	uint64_t Mesh()
 	{
 
-		return *(uint64_t*)(this + 0x310);
+		return *(uint64_t*)(this + 0x318);
 
 	}
 
@@ -539,7 +539,7 @@ public:
 	}
 };
 void* Orig;
-auto Gworld = ResolveRelativeAddress(PScan(("48 89 05 ?? ?? ?? ?? 0F 28 D7")), 7);
+auto Gworld = ResolveRelativeAddress(PScan(("48 89 05 ? ? ? ? 44 38 3D ? ? ? ?")), 7);
 AFortPawn* AcknowledgedPawn;
 void vmt(void* addr, void* pDes, int index, void** ret)
 {
