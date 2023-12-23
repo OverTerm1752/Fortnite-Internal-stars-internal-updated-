@@ -209,7 +209,7 @@ public:
 	AFortPawn* AcknowledgedPawn()
 	{
 
-		return (AFortPawn*)*(uintptr_t*)(this + 0x330);
+		return (AFortPawn*)*(uintptr_t*)(this + 0x338);
 
 	}
 
